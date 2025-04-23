@@ -14,7 +14,6 @@
     height: 950px;
     border-radius: 60px;
     background-color: black;
-    min-width: 470px;
 }
 
 .calc-display {
@@ -26,7 +25,7 @@
 .calc-functions {
     display: flex;
     flex-direction: column;
-    height: 50%;
+    height: 46%;
     width: 85%;
 }
 
@@ -140,7 +139,26 @@
 }
 
 @media screen and (max-width: 540px) {
+
     body{ 
-        background-color: black;
+        background-color: black; 
+    }
+
+    .calc-body {
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    .calc-functions {
+        max-width: 100vw;
+    }
+
+    .calc-text {
+        padding: 0;
+    }
+
+    .calc-row > button {
+        min-height: 87%;
+        max-height: 100%;
     }
 }
