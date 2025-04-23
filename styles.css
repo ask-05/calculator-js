@@ -1,0 +1,140 @@
+.calc-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:98vh;
+}
+
+.calc-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    height: 950px;
+    border-radius: 60px;
+    background-color: black;
+}
+
+.calc-display {
+    display: flex;
+    height: 40%;
+    width: 100%;
+}
+
+.calc-functions {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 85%;
+}
+
+.calc-row {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+}
+
+.calc-row > button {
+    background-color: #aaaaaa;
+    color: white;
+    width: 21%;
+    height: 87%;
+    border-radius: 100%;
+    border: none;
+    font-family: iFont, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    transition: filter 0.2s ease;
+    
+}
+
+.calc-row > button:hover {
+    cursor: pointer;
+}
+
+.calc-row > button:active {
+    filter: brightness(1.5);
+}
+
+.calc-row:nth-child(1) > button:not(:nth-child(4)) {
+    color: black;
+}
+
+.calc-row:not(:nth-child(1)) > button:not(:nth-child(4)) {
+    background-color: #242429;
+}
+
+.calc-row > button:nth-child(4), .calc-row:nth-child(5) > button:nth-child(3) {
+    background-color: #fc9601;
+}
+
+.calc-row:nth-child(5) > button:nth-child(1) {
+    text-align: left;
+    padding-left: 35px;
+    border-radius: 40px 40px 40px 40px;
+    width: 47.5%;
+    height: 87%;
+}
+
+.calc-display {
+    display: flex;
+    flex-direction: column;
+    width: 79.5%;
+}
+
+.calc-text {
+    width: 97%;
+    height: 50%;
+    text-align: right;
+    padding-top: 100px;
+    
+    font-family: iFont, sans-serif;
+    font-weight: 200;
+    font-size: 50px;
+    color: rgb(177, 177, 177);
+}
+
+.display-text {
+    width: 100%;
+    height: 50%;
+    text-align: right;
+    margin: 0;
+
+    font-family: iFont, sans-serif;
+    font-weight: 200;
+    font-size: 100px;
+    color: white;
+}
+
+
+
+@font-face {
+    font-family: "iFont";
+    src: url(./fonts/SF-Pro-Display-Thin.woff) format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "iFont";
+    src: url(./fonts/SF-Pro-Display-Light.woff) format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "iFont";
+    src: url(./fonts/SF-Pro-Display-Regular.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "iFont";
+    src: url(./fonts/SF-Pro-Display-Medium.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
